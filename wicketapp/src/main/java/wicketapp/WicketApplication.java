@@ -1,5 +1,6 @@
 package wicketapp;
 
+import org.apache.wicket.RuntimeConfigurationType;
 import org.apache.wicket.protocol.http.WebApplication;
 
 /**
@@ -27,8 +28,11 @@ public class WicketApplication extends WebApplication
 		super.init();
 
 		// add your configuration here
-		System.setProperty("wicket.configuration", "deployment");
-		
 		mountPage("products", ProductsPage.class);
 	}
+
+    @Override
+    public RuntimeConfigurationType getConfigurationType() {
+        return RuntimeConfigurationType.DEPLOYMENT;
+    }	
 }
