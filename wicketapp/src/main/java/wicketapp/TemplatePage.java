@@ -2,20 +2,16 @@ package wicketapp;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.model.Model;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
-public class TemplatePage extends WebPage {
-	
-	private Model pageNameModel = new Model();
+@SuppressWarnings("serial")
+public abstract class TemplatePage extends WebPage {
 	
     public TemplatePage(final PageParameters parameters) {
-    	// h2 page name
-    	add(new Label("pageName", pageNameModel));
+        super(parameters);
+        // h2 page name
+    	add(new Label("pageName", getPageName()));
     }
     
-    public void setPageName(String name) {
-    	pageNameModel.setObject(name);
-    }
-    
+    public abstract String getPageName();
 }

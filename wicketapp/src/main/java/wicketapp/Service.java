@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Service {
 	private static List<Product> products = new ArrayList<Product>();
-	private static List<Category> categories = new ArrayList<Category>();;
+	private static List<Category> categories = new ArrayList<Category>();
 	
 	static {
 		System.out.println("Creating products");
