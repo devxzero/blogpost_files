@@ -1,12 +1,11 @@
 package wicketapp;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class Service {
-	private static List<Product> products = new ArrayList<Product>();
-	private static List<Category> categories = new ArrayList<Category>();
+	private static ArrayList<Product> products = new ArrayList<Product>();
+	private static ArrayList<Category> categories = new ArrayList<Category>();
 	
 	static {
 		System.out.println("Creating products");
@@ -27,7 +26,7 @@ public class Service {
 		}
 	}
 	
-	public static List<Product> getProducts() {
+	public static ArrayList<Product> getProducts() {
 		return products;
 	}
 
