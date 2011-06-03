@@ -1,0 +1,16 @@
+@(products: Seq[s.Product])
+@import views.tags.html._
+
+
+@main("Product listing title", "Product Listing page") {
+	<table>
+		@for(product <- products) {
+			<tr>
+				<td>@productTag(product)</td>
+				<td>
+					@for(category <- product.categories.toList) { $@category.name, }
+				</td>
+			</tr>
+		}
+	</table>
+}

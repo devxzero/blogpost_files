@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+#{set title:'Product listing' /}
+#{set pagename: 'Product listing' /}
+
+<table>
+	#{list items:products, as:'product'}
+		<tr>
+			<td>#{product product /}</td>
+			<td>
+				#{list items:product.categories, as:'category'}${category.name}, #{/list}
+			</td>
+		</tr>
+	#{/list}
+</table>
+

@@ -1,0 +1,10 @@
+<% @pagename = "Product Listing" %>
+
+<table>
+	<% @products.each do |product| %>
+	<tr>
+		<td class="productname"><%= render "shared/product", :product => product %></td>
+		<td class="categories"><% product.categories.each do |category| %><%= category.name %>, <% end %></td>
+	</tr>
+	<% end %>
+</table>
