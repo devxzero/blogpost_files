@@ -1,4 +1,4 @@
-Railsapp::Application.configure do
+Railsapp2::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # The production environment is meant for finished, "live" apps.
@@ -19,7 +19,6 @@ Railsapp::Application.configure do
   # just comment this out and Rails will serve the files
 
   # See everything in the log (default is :info)
-  # config.log_level = :debug
   config.log_level = :warn
 
   # Use a different logger for distributed setups
@@ -39,7 +38,7 @@ Railsapp::Application.configure do
   # config.action_mailer.raise_delivery_errors = false
 
   # Enable threaded mode
-  # config.threadsafe!
+  config.threadsafe!
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found)

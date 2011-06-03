@@ -20,21 +20,22 @@ module ProductsHelper
 	
 	class Service
 		@@products = Array.new
-		def Service.getProducts
+		def Service.getProducts(n)		
 			if @@products.size == 0
+				puts "Generating products"
 				categories = Array.new
 				for i in (0 .. 5)
 					categories.push(Category.new((1000 + i).to_s))
 					
 				end
 			
-				for i in (0 .. 1000)
+				for i in (0 .. 20000)
 					p = Product.new(i.to_s, i, (i*i).to_s, categories)
 					@@products.push(p)
 				end
 			end
 			
-			@@products
+			@@products[0, n]
 		end
 	end
 end
