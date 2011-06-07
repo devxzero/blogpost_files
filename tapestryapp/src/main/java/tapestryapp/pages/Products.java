@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.tapestry5.annotations.Property;
+import org.apache.tapestry5.annotations.RequestParameter;
 import org.apache.tapestry5.ioc.annotations.Inject;
 
 import tapestryapp.Category;
@@ -20,9 +21,9 @@ public class Products
 	@Property
 	private List<Product> products;
 	
-	public void onActivate() {
+	public void onActivate(@RequestParameter(value="n", allowBlank=true) Integer productCount) {
 		if (products == null) {
-			products = dataService.getProducts();
+			products = productCount == null ? dataService.getProducts() : dataService.getProducts(productCount);
 		}
 	}
 	

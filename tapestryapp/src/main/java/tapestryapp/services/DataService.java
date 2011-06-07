@@ -36,4 +36,8 @@ public class DataService {
 	public List<Product> getProducts() {
 		return products;
 	}
+	
+	public List<Product> getProducts(int max) {
+		return products.subList(0, max);
+	}	
 }
