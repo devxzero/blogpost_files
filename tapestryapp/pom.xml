@@ -4,8 +4,8 @@
     <artifactId>tapestryapp</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>tapestryapp Tapestry 5 Application</name>
-        <dependencies>
+    <name>Tapestry 5 Application for response time comparison</name>
+    <dependencies>
         <dependency>
             <groupId>org.apache.tapestry</groupId>
             <artifactId>tapestry-core</artifactId>
