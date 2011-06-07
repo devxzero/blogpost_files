@@ -93,3 +93,14 @@ log4j = {
 plugin {
 	excludes = "hibernate, domain"
 }
+
+/*
+grails.plugins.freemarkertags = [
+    autoImport: false,                   // To enable or to disable auto-import feature. When disabled the generated libraries can be imported using FreeMarker default mechanism. 
+    defineLegacyFunctions: false,       // To enable or to disable "legacy" (name starting with '_') function declaration/definition feature.
+    asSharedVariables: true,           // EXPERIMENTAL: To expose directives and functions as shared variables, avoiding extra object creation at every template rendering. 
+
+    viewResolver: [ legacyHideExceptions: false // To enable or to disable the "feature" of hiding exceptions thrown by FreeMarkerViewResolver. It will also affect how those exceptions will be logged. 
+                  ]
+]
+*/
