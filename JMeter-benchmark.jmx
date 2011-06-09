@@ -50,6 +50,9 @@
           <collectionProp name="Asserion.test_strings">
             <stringProp name="-1679829923">Company</stringProp>
             <stringProp name="1051158515">footer.....</stringProp>
+            <stringProp name="1515398">1898</stringProp>
+            <stringProp name="31126536"> 3748</stringProp>
+            <stringProp name="31158405"> 4999</stringProp>
           </collectionProp>
           <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
           <boolProp name="Assertion.assume_success">false</boolProp>
