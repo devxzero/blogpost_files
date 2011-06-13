@@ -1,0 +1,19 @@
+<html t:type="layout" title="Products Listing"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+      xmlns:p="tapestry:parameter">
+
+  <body>
+    <table>
+    	<t:loop source="products" value="product">
+        <tr>
+          <td>
+          	<t:productdisplay product="product"/>
+          </td>
+          <td>
+          	${categories}
+          </td>
+        </tr>
+      </t:loop>
+    </table>
+  </body>
+</html>
