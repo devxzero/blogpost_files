@@ -9,8 +9,8 @@ import models.*;
 import s.*;
 
 public class Products extends Controller {
-   public static void index() {
-		List<Product> products = Service.getProducts();
+   public static void index(int n) {
+		List<Product> products = Service.getProducts(n);
         render(products);	
     }
 	

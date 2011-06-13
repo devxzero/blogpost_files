@@ -16,7 +16,7 @@ public class Service {
 			categories.add(new Category(name));
 		}
 		
-		for (int i = 0; i < 5000; i++) {
+		for (int i = 0; i < 20000; i++) {
 			String name = Integer.toString(i);
 			String description = Integer.toString(i * i);
 			
@@ -27,8 +27,8 @@ public class Service {
 		}
 	}
 	
-	public static List<Product> getProducts() {
-		return products;
+	public static List<Product> getProducts(int max) {
+		return products.subList(0, max);
 	}
 
 }

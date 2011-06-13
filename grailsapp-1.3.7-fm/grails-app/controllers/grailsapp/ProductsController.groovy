@@ -6,7 +6,7 @@ import s.*
 
 class ProductsController {
     def index = {
-		[products: s.Service.getProducts()]
+		[products: s.Service.getProducts(params.n.toInteger())]
 	}
 	
 	def env = {
