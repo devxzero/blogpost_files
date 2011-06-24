@@ -19,7 +19,6 @@ public class AppModule
         configuration.add(SymbolConstants.SUPPORTED_LOCALES, "en");
         configuration.add(SymbolConstants.APPLICATION_VERSION, "1.0-SNAPSHOT");
         configuration.add(SymbolConstants.DEFAULT_STYLESHEET, "context:default.css" );
-        configuration.add(SymbolConstants.DEFAULT_JAVASCRIPT, "" );
         configuration.add(SymbolConstants.BLACKBIRD_ENABLED, "false");
         configuration.add(SymbolConstants.COMBINE_SCRIPTS, "false" );
         configuration.add(SymbolConstants.GZIP_COMPRESSION_ENABLED, "false");
