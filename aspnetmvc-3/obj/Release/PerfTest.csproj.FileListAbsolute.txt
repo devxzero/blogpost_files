@@ -1,0 +1,7 @@
+C:\Makotosan\PerfTest\PerfTest\bin\PerfTest.dll
+C:\Makotosan\PerfTest\PerfTest\bin\PerfTest.pdb
+C:\Makotosan\PerfTest\PerfTest\bin\EntityFramework.dll
+C:\Makotosan\PerfTest\PerfTest\bin\EntityFramework.xml
+C:\Makotosan\PerfTest\PerfTest\obj\Release\ResolveAssemblyReference.cache
+C:\Makotosan\PerfTest\PerfTest\obj\Release\PerfTest.dll
+C:\Makotosan\PerfTest\PerfTest\obj\Release\PerfTest.pdb

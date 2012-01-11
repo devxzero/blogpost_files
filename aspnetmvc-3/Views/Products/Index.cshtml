@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Index";
+    ViewBag.PageName = "Products listing";
+}
+@model IEnumerable<mvcapp.Models.Product>
+<table>
+    <!-- The products -->
+    @foreach(var product in Model){
+        <tr>
+            <td>
+                @{Html.RenderPartial("_Product", product);}
+            </td>
+            <td>
+                @string.Join(",", product.Categories.Select(c=> c.Name))
+            </td>
+        </tr>
+        }
+</table>
