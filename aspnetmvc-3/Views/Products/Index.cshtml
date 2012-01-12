@@ -8,7 +8,7 @@
     @foreach(var product in Model){
         <tr>
             <td>
-                @{Html.RenderPartial("_Product", product);}
+                @Html.Partial("_Product",product)
             </td>
             <td>
                 @string.Join(",", product.Categories.Select(c=> c.Name))
