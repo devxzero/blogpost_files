@@ -1,6 +1,5 @@
 ﻿namespace mvcapp.Controllers
 {
-    using System.Collections.Generic;
     using System.Web.Mvc;
 
     using Models;
@@ -10,9 +9,14 @@
         #region Public Methods
 
         public ActionResult Index(int n)
-        {
-            List<Product> products = Service.GetProducts(n);
+        {            
+            var products = Service.GetProducts(n);
             return View(products);
+        }
+
+        public ActionResult Product(Product product)
+        {
+            return PartialView(product);
         }
 
         #endregion

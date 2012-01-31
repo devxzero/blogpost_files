@@ -1,6 +1,7 @@
 ﻿namespace mvcapp.Models
 {
     using System.Collections.Generic;
+    using System.Linq;
 
     public class Service
     {
@@ -38,9 +39,9 @@
 
         #region Public Methods
 
-        public static List<Product> GetProducts(int max)
+        public static IEnumerable<Product> GetProducts(int max)
         {
-            return products.GetRange(0, max);
+            return products.Take(max);
         }
 
         #endregion

@@ -4,7 +4,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<link href="@Url.Content("~/Content/default.css")" media="screen" rel="stylesheet" type="text/css" />
-
 		<!-- Title needs to be injected -->
 		<title>@ViewBag.Title</title>
 	</head>
@@ -15,23 +14,19 @@
 			</div>
 			<div id="contentwrapper">
 				<div id="contentcolumn">
-
 					<!-- Page name needs to be injected -->
 					<div><h2>@ViewBag.PageName</h2></div>
 					<div class="innertube">
-
 						<!-- The content that is unique for each page -->
 						@RenderBody()
 					</div>
 				</div>
 			</div>
-
 			<div id="leftcolumn">
 				<div class="innertube">
 					<h3>Side bar.....</h3>
 				</div>
 			</div>
-
 			<div id="footer">footer.....</div>
 		</div>
 	</body>
