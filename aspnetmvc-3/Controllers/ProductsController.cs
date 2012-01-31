@@ -14,11 +14,6 @@
             return View(products);
         }
 
-        public ActionResult Product(Product product)
-        {
-            return PartialView(product);
-        }
-
         #endregion
     }
 }

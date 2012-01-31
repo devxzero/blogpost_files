@@ -7,7 +7,7 @@
 <!-- The products -->
 @foreach (var product in Model)
 {
-<tr><td>@Html.Action("Product", product)</td>
+<tr><td>@Html.Partial("Product", product)</td>
 <td>@string.Join(", ", product.Categories.Select(c=> c.Name))</td>
 </tr>
 }

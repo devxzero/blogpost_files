@@ -7,6 +7,10 @@
     {
         #region Constructors and Destructors
 
+        public Product()
+        {
+        }
+
         public Product(string name, int price, string description, params Category[] categories)
         {
             this.Name = name;
