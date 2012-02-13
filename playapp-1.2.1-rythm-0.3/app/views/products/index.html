@@ -1,0 +1,17 @@
+@import s.*;
+@args List<Product> products;
+@extends("main.html")
+@set("title": "Product listing")
+@set("pagename": "Product listing")
+
+<table>
+  @for(Product prod: products) {
+		<tr>
+			<td>@product(prod)</td>
+			<td>
+        @for(Category category: prod.getCategories()) @category.getName(), @
+			</td>
+		</tr>
+	}
+</table>
+
