@@ -1,0 +1,6 @@
+@import s.*;
+@args Product prod;
+<div class="product">
+	<img src="@(prod.getName()).jpg" />
+	<span class="productname">@prod.getName()</span>, <span class="price">$@prod.getPrice()</span>
+</div>

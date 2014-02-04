@@ -1,0 +1,12 @@
+# Application dependencies
+
+require:
+    - play
+    - com.gelinsoft -> play-rythm 0.3a
+
+repositories:
+    - gelinsoft:
+        type: http
+        artifact: "http://gelinsoft.com/play/repo/[module]-[revision].zip"
+        contains:
+            - com.gelinsoft -> *
